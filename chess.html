@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chess game</title>
+        <link href="chess.css" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+               var i,j;
+               var startwhite = true;
+               for(i=0; i<8; i++)
+                {
+                    for(j=0; j<8; j++)
+                    {
+                        if(startwhite)
+                        {
+                           if(j%2 == 0)
+                            document.write("<div class=\"white\"></div>");
+                           else
+                            document.write("<div class=\"black\"></div>");
+                        }
+                        else{
+                            if(j%2==0)
+                            document.write("<div class=\"black\"></div>");
+                            else
+                            document.write("<div class=\"white\"></div>");
+                        }
+                    }
+                    if(i%2==0)
+                    {
+                        startwhite = false;
+                    }
+                    else
+                        startwhite = true;
+                        document.write("<br>");
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generating admission form</title>
+    </head>
+    <body>
+        <h1>Admission Form</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>Full Name:</td>
+                    <td><input type="text" name="lname"/></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth::</td>
+                    <td><input type="text" name="dob"/></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gender" value="male">male</input></td>
+                    <td><input type="radio" name="gender" value="female"/>female</input></td>
+                </tr>
+                <tr>
+                    <td>Category::</td>
+                    <td>
+                        <select name="category">
+                            <opton>St</opton>
+                            <option>Sc</option>
+                            <option>Obc</option>
+                            <option>oc</option>
+                            <option>others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+                <tr>
+                    <td>Contact No:</td>
+                    <td><input type="text" name="phone"/></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea rows="2" cols="20"></textarea></td>
+                </tr>
+            </table>
+        </form>
+        <input type="submit" value="submit">
+        <input type="reset" value="cancel">
+    </body>
+</html>
